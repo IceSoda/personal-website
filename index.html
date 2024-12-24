@@ -8,55 +8,45 @@
 </head>
 <body>
     <header>
-        <h1>Hello, 我是柴俊哲！</h1>
+        <h1>你好，我是柴俊哲！</h1>
         <p>Think Different</p>
         <div id="profile-photo">
-            <img src="图片1.jpg" alt="我的照片">
+            <img src="your-photo.jpg" alt="我的照片">
+        </div>
+        <!-- 添加联系方式图标按钮 -->
+        <div class="contact-icons">
+            <button class="contact-icon" id="wechat-btn">
+                <img src="wechat-icon.png" alt="微信">
+            </button>
+            <button class="contact-icon" id="phone-btn">
+                <img src="phone-icon.png" alt="电话">
+            </button>
+            <button class="contact-icon" id="email-btn">
+                <img src="email-icon.png" alt="邮箱">
+            </button>
         </div>
     </header>
 
+    <!-- 弹出的对话框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>我的联系方式</h2>
+            <p id="contact-info"></p>
+        </div>
+    </div>
+
     <section id="about">
-        <h2>关于我 About me</h2>
+        <h2>关于我</h2>
         <p>我是一个硕士研究生，专注于人工智能和集成电路领域。</p>
     </section>
 
-    <section id="education">
-        <h2>教育背景</h2>
-        <ul>
-            <li>硕士学位 - [学校名称]</li>
-            <li>学士学位 - [学校名称]</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>项目经验</h2>
-        <ul>
-            <li>项目1: [简短描述]</li>
-            <li>项目2: [简短描述]</li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>技能</h2>
-        <ul>
-            <li>编程语言：Python、MATLAB、C++</li>
-            <li>框架与工具：TensorFlow、PyTorch、Git</li>
-            <li>领域知识：人工智能、集成电路</li>
-        </ul>
-    </section>
-
-    <section id="hobbies">
-        <h2>兴趣爱好</h2>
-        <p>我喜欢健身、旅行和摄影，也对科幻电影和小说有浓厚兴趣。</p>
-    </section>
-
-    <section id="career-goals">
-        <h2>职业目标</h2>
-        <p>我希望成为一名优秀的项目经理，将技术与管理结合，为企业创造价值。</p>
-    </section>
+    <!-- 更多内容... -->
 
     <footer>
         <p>&copy; 2024 柴俊哲</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
