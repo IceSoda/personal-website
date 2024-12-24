@@ -13,13 +13,13 @@ h1, h2 {
 /* header 部分，添加图片背景 */
 header {
     position: relative;
-    background-image: url('robot.jpeg'); /* 替换为你上传的图片文件名 */
-    background-size: cover; /* 使图片填满背景 */
-    background-position: center; /* 居中显示 */
+    background-image: url('图片1.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 80px 20px; /* 根据需要调整 padding */
+    padding: 80px 20px;
     text-align: center;
-    height: 400px; /* 可以调整高度 */
+    height: 400px;
 }
 
 /* 修改 h1 文本颜色 */
@@ -33,10 +33,10 @@ header h1 {
     top: 20px;
     right: 20px;
     width: auto;
-    height: 160px; /* 根据需要调整高度 */
-    max-width: 200px; /* 最大宽度 */
+    height: 160px;
+    max-width: 200px;
     border: 3px solid white;
-    border-radius: 15px; /* 圆角矩形效果 */
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -44,7 +44,66 @@ header h1 {
 #profile-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 确保图片适应外框 */
+    object-fit: cover;
+}
+
+/* 联系方式按钮的样式 */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 弹出对话框 (模态框) 样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 背景半透明 */
+    backdrop-filter: blur(5px); /* 添加模糊效果 */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 80%;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
 }
 
 /* 各个 section 的样式 */
