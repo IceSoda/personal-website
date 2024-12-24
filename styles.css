@@ -13,18 +13,18 @@ h1, h2 {
 /* header 部分，添加图片背景 */
 header {
     position: relative;
-    background-image: url('图片1.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('robot.jpeg'); /* 替换为你上传的图片文件名 */
+    background-size: cover; /* 使图片填满背景 */
+    background-position: center; /* 居中显示 */
     color: white;
-    padding: 80px 20px;
+    padding: 80px 20px; /* 根据需要调整 padding */
     text-align: center;
-    height: 400px;
+    height: 400px; /* 可以调整高度 */
 }
 
 /* 修改 h1 文本颜色 */
 header h1 {
-    color: #f4f4f4; /* 白色，可以替换为自己喜欢的任何颜色 */
+    color: #f4f4f4; /* 白色，可以替换为你喜欢的颜色 */
 }
 
 /* 个人照片的外框样式 */
@@ -33,10 +33,10 @@ header h1 {
     top: 20px;
     right: 20px;
     width: auto;
-    height: 160px;
-    max-width: 200px;
+    height: 160px; /* 根据需要调整高度 */
+    max-width: 200px; /* 最大宽度 */
     border: 3px solid white;
-    border-radius: 15px;
+    border-radius: 15px; /* 圆角矩形效果 */
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -44,7 +44,20 @@ header h1 {
 #profile-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* 确保图片适应外框 */
+}
+
+/* 各个 section 的样式 */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
 }
 
 /* 联系方式按钮的样式 */
@@ -104,19 +117,6 @@ header h1 {
     font-size: 30px;
     cursor: pointer;
     color: #333;
-}
-
-/* 各个 section 的样式 */
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    margin-bottom: 10px;
 }
 
 /* 清除列表样式 */
